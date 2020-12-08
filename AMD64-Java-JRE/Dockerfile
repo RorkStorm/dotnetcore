@@ -15,7 +15,7 @@ RUN dotnet tool install --global dotnet-sonarscanner
 ENV PATH="$PATH:/root/.dotnet/tools"
 RUN apt-get -y install nano htop net-tools curl
 RUN apt-get -y install default-jre
-RUN curl -sL https://deb.nodesource.com/setup_14.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
 RUN apt-get install -y nodejs
 
 # Inform Docker that the container is listening on the specified port at runtime.
